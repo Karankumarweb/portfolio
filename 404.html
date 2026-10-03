@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-accent="indigo">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — Karan Kumar</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<style>
+  :root {
+    --a1: #6366f1; --a2: #22d3ee;
+    --bg: #070b16; --surface: rgba(255,255,255,.05);
+    --border: rgba(255,255,255,.12); --text: #e8ecf7; --muted: #93a0b8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: grid; place-items: center; text-align: center;
+    padding: 32px; background: var(--bg); color: var(--text);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(99,102,241,.35), transparent 55%),
+      radial-gradient(circle at 85% 80%, rgba(34,211,238,.28), transparent 55%);
+  }
+  .code {
+    font-size: clamp(4.5rem, 18vw, 9rem); font-weight: 800; line-height: 1; letter-spacing: -.04em;
+    background: linear-gradient(120deg, var(--a1), var(--a2));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  h1 { font-size: clamp(1.3rem, 4vw, 1.9rem); margin: 18px 0 10px; }
+  p { color: var(--muted); max-width: 46ch; margin: 0 auto 28px; }
+  a.btn {
+    display: inline-flex; align-items: center; gap: .5em;
+    padding: 13px 26px; border-radius: 999px; text-decoration: none; font-weight: 600;
+    background: linear-gradient(120deg, var(--a1), var(--a2)); color: #fff;
+    box-shadow: 0 14px 34px -14px rgba(99,102,241,.9); transition: transform .25s ease;
+  }
+  a.btn:hover { transform: translateY(-2px); }
+</style>
+</head>
+<body>
+  <main>
+    <p class="code">404</p>
+    <h1>This page took a wrong turn</h1>
+    <p>The link may be broken, or the page has moved. Let's get you back to the portfolio.</p>
+    <a class="btn" href="/portfolio/">Back to the portfolio</a>
+  </main>
+</body>
+</html>

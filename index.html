@@ -1,578 +1,834 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark" data-accent="indigo">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="PersonalPort.css">
-    <link rel="stylesheet" href="PersonalPort2.css">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- style switcher -->
-    <link rel="stylesheet" href="personalPortfolio1.css" class="alternate-style" title="personalPortfolio1" disabled>
-    <link rel="stylesheet" href="PersonalPort2.css" class="alternate-style" title="PersonalPort2" disabled>
-    <link rel="stylesheet" href="portfolioPort3.css" class="alternate-style" title="portfolioPort3" disabled>
-    <link rel="stylesheet" href="portfolioPort4.css" class="alternate-style" title="portfolioPort4" disabled>
-    <link rel="stylesheet" href="portfolioPort5.css" class="alternate-style" title="portfolioPort5" disabled>
-    <link rel="stylesheet" href="style-switcher.css">
-</head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karan Kumar — Java Backend Developer | Spring Boot · REST APIs · Microservices</title>
+<meta name="description" content="Karan Kumar — Java backend developer in Bengaluru. Spring Boot, REST APIs, microservices, PostgreSQL, Spring Security &amp; JWT, JUnit/Mockito and API test automation. B.E. ECE, SLIET Punjab.">
+<meta name="author" content="Karan Kumar">
+<meta name="theme-color" content="#05070e">
+<link rel="canonical" href="https://karankumarweb.github.io/portfolio/">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Karan Kumar — Java Backend Developer">
+<meta property="og:description" content="Spring Boot · REST APIs · Microservices · PostgreSQL · JUnit/Mockito · API test automation. Based in Bengaluru, India.">
+<meta property="og:url" content="https://karankumarweb.github.io/portfolio/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Karan Kumar — Java Backend Developer">
+<meta name="twitter:description" content="Spring Boot · REST APIs · Microservices · PostgreSQL · JUnit/Mockito · API test automation.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='71' font-family='system-ui,sans-serif' font-size='60' font-weight='800' fill='white' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Set theme before first paint to avoid a flash -->
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('kk-theme') || 'dark';
+      var a = localStorage.getItem('kk-accent') || 'indigo';
+      document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.setAttribute('data-accent', a);
+    } catch (e) {}
+  })();
+</script>
+</head>
 
 <body>
-    <!-- main container -->
-    <div class="main-container">
-        <div class="aside">
-           <div class="logo">
-            <a href="#"><span>Karan</span></a>
-           </div>
-           <div class="nav-toggler">
-            <span></span>
-           </div>
-           <ul class="nav">
-            <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
-            <li><a href="#about" class="active"><i class="fa fa-user"></i>About</a></li>
-            <li><a href="#services"><i class="fa fa-list"></i>Service</a></li>
-            <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-            <li><a href="#certificate"><i class="fa-solid fa-certificate"></i>Cetificate</a></li>
-            <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
-           </ul>
-        </div>
-        <!-- main -content -->
-        <div class="main-content">
-            <!-- home section start -->
-            <section class="home section" id="home">
-                <div class="container">
-                    <div class="row">
-                        <div class="home-info padd-15">
-                            <h3 class="hello">Hello, My name is <span class="name">Karan Kumar</span></h3>
-                            <h3 class="my-profession">I'm a <span class="typing">web Designer</span></h3>
-                            <p>I am a web Designer with Creative mind.My expertise is to create and website design ,graphic design and many more...</p>
-                            <a href="#contact" class="btn hire-me">Hire me</a>
-                        </div>
-                        <div class="home-img padd-15">
-                            <img src="myselfk.jpg" alt="name">
-                        </div>
-                    </div>
-                </div>
-            
-            </section>
-            <!-- home section end -->
-            <!-- About section start-->
-            <section class="about section" id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>About Me</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="about-content padd-15">
-                            <div class="row">
-                                <div class="about-text padd-15">
-                                    <h3>I'm Karan and <span>Web Developer</span></h3>
-                                    <p>My proficiency spans a diverse array of programming languages and frameworks essential for web development. From HTML, CSS, and JavaScript for front-end design to Node js, or PHP for back-end functionality.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="personal-info padd-15">
-                                    <div class="row">
-                                        <div class="info-item padd-15">
-                                            <p>Birthday : <span>27 Feb 2003</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Age : <span>21</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Website : <span>.............</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Email : <span>kk4447058@gmail.com</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Degree : <span>Btech</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Phone : <span>+91 8757280393</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>City : <span>Gaya</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Freelance : <span>Available</span></p>
-                                        </div>
-                                    </div>
-                                    <!-- hsk -->
-                                    <div class="row">
-                                        <div class="buttons padd-15">
-                                            <a id="download-btn" href="Resume.pdf" download="Resume.pdf" class="btn bot">Download CV</a>
 
-                                            <a href="#contact" class="btn hire-me">Hire Me</a>
+<!-- ambient background -->
+<div class="bg-fx" aria-hidden="true">
+  <div class="grid-lines"></div>
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+</div>
 
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skill padd-15">
-                                    <div class="row">
-                                        <div class="skill-item padd-15">
-                                            <h5>JS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width:55%;"></div>
-                                                <div class="skill-percent">55%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>C++</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 76%;"></div>
-                                                <div class="skill-percent">76%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>HTML</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 90%;"></div>
-                                                <div class="skill-percent">90%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>CSS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 80%;"></div>
-                                                <div class="skill-percent">80%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>C</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 46%;"></div>
-                                                <div class="skill-percent">46%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="education padd-15">
-                                    <h3 class="title">Education</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2006-2018
-                                                        </h3>
-                                                        <h4 class="timeline-title">Schooling</h4>
-                                                        <p classs="timeline-text">R.D Public School Vikram Vihar Tekari,Gaya</p>
-                                                    
-                                                </div>
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2019-2021
-                                                        </h3>
-                                                        <h4 class="timeline-title">10+2</h4>
-                                                        <p classs="timeline-text">Gyan Bharti Senior Secondary School, Raniganj,Tekari</p>
-                                                    
-                                                </div>
-                                                 <!-- timeline item -->
-                                                 <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2024-Present 
-                                                         </h3>
-                                                       <h4 class="timeline-title">University</h4>
-                                                       <p classs="timeline-text"> Sant Longowal Institute of Engineering and Technology punjab,India</p>                                                   
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="experience padd-15">
-                                    <h3 class="title">Experience</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2021-2022
-                                                        </h3>
-                                                        <h4 class="timeline-title">Bharat intern</h4>
-                                                        <p classs="timeline-text">Summer intern</p>
-                                                    
-                                                </div>
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                        <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2022-2023
-                                                        </h3>
-                                                        <h4 class="timeline-title">Software Services Solution</h4>
-                                                        <p classs="timeline-text">Summer trainning</p>
-                                                    
-                                                </div>
-                                                 <!-- timeline item -->
-                                                 <!-- <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                         <h3 class="timeline-date">
-                                                            <i class="fa fa-calendar"></i> 2023-2024
-                                                         </h3>
-                                                       <h4 class="timeline-title">Soft Skills</h4>
-                                                        <p classs="timeline-text">As a Developer</p>
-                                                    
-                                                </div> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- About section end-->
-            <!-- service section start -->
-            <section class="service section" id="services">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>service</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- service item start-->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class=" fa fa-solid fa-brain"></i>
-                                </div>
-                                <h4>Web Designer</h4>
-                                <p>Crafting digital experiences that blend creativity, functionality, and user-centric design to elevate online presence and engagement. </p>
-                            </div>
-                        </div>
-                        <!-- service item  end-->
-                         <!-- service item start-->
-                         <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-search"> </i>
-                                </div>
-                                <h4>Search</h4>
-                                <p>Optimizing search experiences through advanced algorithms to swiftly retrieve pertinent information from extensive data sets.</p>
-                            </div>
-                        </div>
-                        <!-- service item  end-->
-                         <!-- service item start-->
-                         <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-solid fa-database"></i>
-                                </div>
-                                <h4>Database</h4>
-                                <p>Designing and managing organized repositories of information to facilitate efficient data storage, retrieval, and analysis for informed decision-making.</p>
-                            </div>
-                        </div>
-                        <!-- service item  end-->
-                         <!-- service item start-->
-                         <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class=" fa fa-brands fa-connectdevelop"></i>
-                                </div>
-                                <h4>Developer</h4>
-                                <p>Building innovative digital solutions through code to solve complex problems and enhance user experiences across various platforms.</p>
-                            </div>
-                        </div>
-                        <!-- service item  end-->
-                         <!-- service item start-->
-                         <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-solid fa-code"></i>
-                                </div>
-                                <h4>Coder</h4>
-                                <p>Transforming ideas into functional reality through precise and efficient manipulation of programming languages and algorithms.</p>
-                            </div>
-                        </div>
-                        <!-- service item  end-->
-                         <!-- service item start-->
-                         <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-mobile-alt"> </i>
-                                </div>
-                                <h4>App Developer</h4>
-                                <p>Creating intuitive and impactful mobile applications that seamlessly integrate cutting-edge technology to address user needs and enhance daily experiences. </p>
-                            </div>
-                        </div>
-                        <!-- service item  end-->
-                    </div>
-                </div>
-            </section>
-            <!-- service section end-->
-            <!-- portfolio section start -->
-            <section class="portfolio section" id="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Portfolio</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="portfolio-heading padd-15">
-                            <marquee direction="right" behavior="alternate" scroolamount="20"><h2>My Last Projects : </h2></marquee>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- portfolio-items start -->
-                        <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="screeno3.png" alt="" style="height: 250px;">
-                                    <p style="color: rgb(112, 188, 214);">Smart Ambulance with GPS using Ardiuno</p> </div>                           
-                            </div>
-                        </div>
-                        <!-- portfolio-items  end-->
-                        <!-- portfolio-items start -->
-                        <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="tick-tok-toe.jpg" alt="" style="height: 250px;">
-                                    <p style="color: rgb(112, 188, 214);">Tick-Tack-Toe Game </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio-items  end-->
-                        <!-- portfolio-items start -->
-                        <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="ecommerce.jpg" alt=""style="height: 250px;">
-                                    <p style="color: rgb(112, 188, 214);">Ecommerce website</p>
-                                </div>
-                            </div>
-                        </div> 
-                        <!-- portfolio-items  end-->
-                        <!-- portfolio-items start -->
-                        <!-- <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="project04.png" alt="" style="height: 250px;">
-                                    <p style="color: rgb(112, 188, 214);">Website Design named HamroSchool</p>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- portfolio-items  end-->
-                        <!-- portfolio-items start -->
-                        <!-- <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="screeno1.png" alt="" style="height: 250px;">
-                                    <p style="color: rgb(112, 188, 214);">Snake Game Using Python</p>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- portfolio-items  end-->
-                        <!-- portfolio-items start -->
-                        <!-- <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="screeno2.png" alt="" style="height: 250px;">
-                                    <p style="color: rgb(112, 188, 214);">Ping Pong Game Using Python</p>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- portfolio-items  end-->
-                    </div>
-                </div>
-            </section>
-            <!-- portfolio section end-->
-            <!-- certificate section start-->
-            <section class="portfolio section" id="certificate">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Certificates</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="portfolio-heading padd-15">
-                            <marquee direction="right" behavior="alternate" scroolamount="20"><h2>My Achivements : </h2></marquee>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- portfolio-items start -->
-                        <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="c++ cirtificatr. karan kumar (1)_page-0001.jpg" alt="" style="height: 250px;">
-                                </div>                     
-                            </div>
-                        </div>
-                        <!-- portfolio-items  end-->
-                        <!-- portfolio-items start -->
-                        <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="cpp_page-0001.jpg" alt="" style="height: 250px;">
-                                   
-                                </div>
-                            </div>
-                        </div>
-                        <!-- portfolio-items  end-->
-                        <!-- portfolio-items start -->
-                        <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="Karan Kumar.html certificate_page-0001.jpg" alt=""style="height: 250px;">
-                                   
-                                </div>
-                            </div>
-                        </div> 
-                        <!-- portfolio-items  end-->
-                        <!-- portfolio-items start -->
-                        <!-- <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="frontend.png" alt="" style="height: 250px;">
-                                    
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- portfolio-items  end-->
-                        <!-- portfolio-items start -->
-                        <!-- <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="cerificate.png" alt="" style="height: 250px;">
-                                    
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- portfolio-items  end-->
-                        <!-- portfolio-items start -->
-                        <!-- <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="certificate2.png" alt="" style="height: 250px;">
-                                    
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- portfolio-items  end-->
-                    </div>
-                </div>
-            </section>
-            <!-- certificate section end-->
-            <!-- contact section start-->
-            <section class="contact section" id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Contact Me</h2>
-                        </div>
-                    </div>
-                    <h3 class="contact-title padd-15">Have You Any Questions</h3>
-                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
-                    <div class="row">
-                        <!-- contact-item start-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-phone"></i></div>
-                            <h4>Call Us On</h4>
-                            <p>+91 8757280393</p>
-                        </div>
-                        <!-- contact-item end-->
-                         <!-- contact-item start-->
-                         <div class="contact-info-item padd-15">
-                            <div class="icon"><i class=" fa fa-solid fa-location-dot"></i></i></div>
-                            <h4>Office</h4>
-                            <p>Gaya</p>
-                        </div>
-                        <!-- contact-item end-->
-                         <!-- contact-item start-->
-                         <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-envelope"></i></div>
-                            <h4>Email</h4>
-                            <p>kk4447058@gamil.com</p>
-                        </div>
-                        <!-- contact-item end-->
-                         <!-- contact-item start-->
-                         <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
-                            <h4>Website</h4>
-                            <!-- <p>www.Domain.com</p> -->
-                        </div>
-                        <!-- contact-item end-->
-                    </div>
-                    <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-                    <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
-                    <!-- contact form -->
-                    <div class="row">
-                        <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
-                                    </div>
-                                </div>
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea name="" class="form-control" id="" placeholder="Message" ></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <button type="submit" class="btn">Send Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- contact section end-->
-            <!-- circle rotationg -->
-        </div>
-        <!-- main content end -->
+<a href="#home" class="sr-only">Skip to content</a>
+
+<!-- ══════════════════════════ NAV ══════════════════════════ -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Karan Kumar — home">
+      <span class="mark" aria-hidden="true">K</span>
+      <span>Karan Kumar<small>Java Backend Developer</small></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-tools">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Change theme and accent colour" aria-expanded="false" aria-controls="themePop">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+      </button>
+      <button class="icon-btn" id="modeBtn" type="button" aria-label="Toggle dark and light mode">
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="icon-btn burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
     </div>
-    <!-- main container end -->
-    <!-- style swticher start -->
-    <div class="style-switcher">
-        <div class="style-switcher-toggler s-icon">
-            <i class="fas fa-cog fa-spin"></i>
-        </div>
-        <div class="day-night s-icon">
-            <i class="fas fa-moon"></i>
-        </div>
-        <h4>Theme Colors</h4>
-        <div class="colors">
-            <span class="personalPortfolio1" onclick="setActiveStyle('personalPortfolio1')"></span>
-            <span class="PersonalPort2" onclick="setActiveStyle('PersonalPort2')"></span>
-            <span class="portfolioPort3" onclick="setActiveStyle('portfolioPort3')"></span>
-            <span class="portfolioPort4" onclick="setActiveStyle('portfolioPort4')"></span>
-            <span class="portfolioPort5" onclick="setActiveStyle('portfolioPort5')"></span>
-            
-        </div>
+
+    <!-- accent picker -->
+    <div class="theme-pop" id="themePop" role="group" aria-label="Accent colour">
+      <h4>Accent colour</h4>
+      <div class="swatches">
+        <button class="swatch" type="button" data-accent="indigo"  aria-pressed="true"  aria-label="Indigo"></button>
+        <button class="swatch" type="button" data-accent="emerald" aria-pressed="false" aria-label="Emerald"></button>
+        <button class="swatch" type="button" data-accent="amber"   aria-pressed="false" aria-label="Amber"></button>
+        <button class="swatch" type="button" data-accent="rose"    aria-pressed="false" aria-label="Rose"></button>
+        <button class="swatch" type="button" data-accent="violet"  aria-pressed="false" aria-label="Violet"></button>
+      </div>
     </div>
-    <!-- style swticher end -->
-    <!-- javascripts files -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="PersonalPort.js"></script>
-    <script src="style-switcher.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </div>
+</header>
 
+<main>
 
+<!-- ══════════════════════════ HERO ══════════════════════════ -->
+<section class="section hero" id="home">
+  <div class="wrap">
+    <div class="hero-grid">
+
+      <div class="hero-copy">
+        <p class="pill"><span class="dot" aria-hidden="true"></span> Available for backend roles &middot; Bengaluru, India</p>
+
+        <h1>Hi, I'm <span class="grad">Karan Kumar</span></h1>
+
+        <p class="role" aria-live="polite">
+          <span class="typed" id="typed"></span><span class="caret" aria-hidden="true"></span>
+        </p>
+
+        <p class="lede">
+          Java-focused engineer with <strong>7+ months at Infosys</strong> building and validating
+          REST APIs — Spring Boot, Spring Data JPA, Spring Security &amp; JWT, PostgreSQL and
+          microservices, backed by a strong <strong>testing and automation</strong> habit
+          (JUnit, Mockito, Rest Assured, Selenium).
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="assets/docs/Karan-Kumar-Resume.pdf" download="Karan-Kumar-Resume.pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            Download résumé
+          </a>
+          <a class="btn btn-ghost" href="#contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg>
+            Get in touch
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <span>Find me on</span>
+          <a href="https://github.com/Karankumarweb" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.55v-1.94c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.2.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+          </a>
+          <a href="mailto:kk4447058@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          </a>
+          <a href="tel:+918757280393" aria-label="Phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- code card -->
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="code-bar" aria-hidden="true">
+            <i></i><i></i><i></i><em>AppointmentController.java</em>
+          </div>
+          <pre class="code-body" aria-label="Sample Spring Boot controller code"><code><span class="ln c-com">// Spring Boot · JWT-secured REST endpoint</span><span class="ln"><span class="c-ann">@RestController</span></span><span class="ln"><span class="c-ann">@RequestMapping</span>(<span class="c-str">"/api/v1/appointments"</span>)</span><span class="ln"><span class="c-key">public class</span> <span class="c-type">AppointmentController</span> {</span><span class="ln"></span><span class="ln">    <span class="c-key">private final</span> <span class="c-type">AppointmentService</span> service;</span><span class="ln"></span><span class="ln">    <span class="c-ann">@PostMapping</span></span><span class="ln">    <span class="c-ann">@PreAuthorize</span>(<span class="c-str">"hasRole('PATIENT')"</span>)</span><span class="ln">    <span class="c-key">public</span> <span class="c-type">ResponseEntity</span>&lt;<span class="c-type">AppointmentDto</span>&gt; <span class="c-fn">book</span>(</span><span class="ln">            <span class="c-ann">@Valid</span> <span class="c-ann">@RequestBody</span> <span class="c-type">BookingRequest</span> req) {</span><span class="ln"></span><span class="ln">        <span class="c-key">return</span> <span class="c-type">ResponseEntity</span>.<span class="c-fn">status</span>(<span class="c-type">CREATED</span>)</span><span class="ln">                .<span class="c-fn">body</span>(service.<span class="c-fn">book</span>(req));</span><span class="ln">    }</span><span class="ln">}</span></code></pre>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- stats -->
+    <div class="stats reveal">
+      <div class="stat"><b data-count="7" data-suffix="+">0</b><span>Months at Infosys</span></div>
+      <div class="stat"><b data-count="25" data-suffix="+">0</b><span>REST APIs built</span></div>
+      <div class="stat"><b data-count="150" data-suffix="+">0</b><span>Tests automated</span></div>
+      <div class="stat"><b data-count="45" data-suffix="%">0</b><span>Manual effort cut</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ ABOUT ══════════════════════════ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">About me</p>
+      <h2>Backend engineer with a <em>tester's eye</em></h2>
+      <p>A B.E. graduate in Electronics &amp; Communication who found a home in Java, Spring Boot and clean, well-tested APIs.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>
+          I'm a Java developer based in <strong>Bengaluru, India</strong>. At
+          <strong>Infosys Limited</strong> I work on Java-based REST API automation — validating
+          request/response payloads, status codes, headers, authentication and business rules —
+          and I've designed and executed <strong>150+ API test cases</strong>, surfacing 25+ critical
+          pre-production defects.
+        </p>
+        <p>
+          Beyond testing, I build. My key project is a <strong>microservices-based healthcare
+          platform</strong> on Spring Boot with separate Patient, Appointment, Notification and
+          AI Assistant services, 25+ RESTful APIs, Spring Data JPA/Hibernate over PostgreSQL,
+          role-based security with Spring Security &amp; JWT, and a Spring AI + OpenAI integration
+          that classifies service requests.
+        </p>
+        <p>
+          I care about the details that make software dependable — DTO validation, centralised
+          exception handling, pagination and custom JPQL queries, and unit tests that actually
+          cover the business logic.
+        </p>
+
+        <div class="facts">
+          <div class="fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            <div><small>Role</small><span>Systems Engineer · Infosys</span></div>
+          </div>
+          <div class="fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><small>Location</small><span>Bengaluru, Karnataka</span></div>
+          </div>
+          <div class="fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            <div><small>Education</small><span>B.E. ECE · SLIET Punjab</span></div>
+          </div>
+          <div class="fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <div><small>CGPA</small><span>8.16 / 10</span></div>
+          </div>
+        </div>
+
+        <a class="btn btn-primary" href="assets/docs/Karan-Kumar-Resume.pdf" download="Karan-Kumar-Resume.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Download résumé
+        </a>
+      </div>
+
+      <aside class="portrait reveal" id="portraitCard">
+        <div class="frame" id="portraitFrame">
+          <span class="monogram" aria-hidden="true">KK</span>
+        </div>
+        <div class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          Open to Java / Spring Boot roles
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ SKILLS ══════════════════════════ -->
+<section class="section" id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Tech stack</p>
+      <h2>What I <em>build with</em></h2>
+      <p>From Core Java and Spring Boot services to SQL tuning and automated test suites.</p>
+    </div>
+
+    <div class="skill-grid">
+      <article class="card skill-card reveal">
+        <div class="head">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></span>
+          <div><h3>Languages</h3><small>Core &amp; foundations</small></div>
+        </div>
+        <div class="tags">
+          <span class="tag">Java 17</span><span class="tag">Core Java</span><span class="tag">OOP</span>
+          <span class="tag">Collections</span><span class="tag">Exception Handling</span><span class="tag">SQL</span>
+          <span class="tag">C++</span><span class="tag">C</span><span class="tag">JavaScript</span><span class="tag">HTML5 / CSS3</span>
+        </div>
+      </article>
+
+      <article class="card skill-card reveal">
+        <div class="head">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></span>
+          <div><h3>Spring ecosystem</h3><small>Services &amp; security</small></div>
+        </div>
+        <div class="tags">
+          <span class="tag">Spring Boot</span><span class="tag">Spring MVC</span><span class="tag">Spring Data JPA</span>
+          <span class="tag">Hibernate</span><span class="tag">Spring Security</span><span class="tag">JWT</span>
+          <span class="tag">Spring AI</span>
+        </div>
+      </article>
+
+      <article class="card skill-card reveal">
+        <div class="head">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="7" rx="2"/><rect x="2" y="14" width="20" height="7" rx="2"/><path d="M6 6.5h.01M6 17.5h.01"/></svg></span>
+          <div><h3>Backend &amp; architecture</h3><small>API design</small></div>
+        </div>
+        <div class="tags">
+          <span class="tag">REST APIs</span><span class="tag">Microservices</span><span class="tag">DTO &amp; Validation</span>
+          <span class="tag">Dependency Injection</span><span class="tag">Global Exception Handling</span><span class="tag">Pagination &amp; Sorting</span>
+        </div>
+      </article>
+
+      <article class="card skill-card reveal">
+        <div class="head">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg></span>
+          <div><h3>Databases</h3><small>Modelling &amp; queries</small></div>
+        </div>
+        <div class="tags">
+          <span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">Oracle</span>
+          <span class="tag">SQL Joins</span><span class="tag">JPQL</span><span class="tag">Schema Design</span>
+        </div>
+      </article>
+
+      <article class="card skill-card reveal">
+        <div class="head">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg></span>
+          <div><h3>Testing &amp; tools</h3><small>Quality engineering</small></div>
+        </div>
+        <div class="tags">
+          <span class="tag">JUnit 5</span><span class="tag">Mockito</span><span class="tag">Rest Assured</span>
+          <span class="tag">TestNG</span><span class="tag">Selenium</span><span class="tag">Cucumber</span>
+          <span class="tag">Postman</span><span class="tag">Maven</span><span class="tag">Git &amp; GitHub</span>
+          <span class="tag">Jenkins</span><span class="tag">Docker</span>
+        </div>
+      </article>
+
+      <article class="card skill-card reveal">
+        <div class="head">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v3M12 19v3M5 12H2M22 12h-3"/><circle cx="12" cy="12" r="4"/><path d="M18.4 5.6 16.9 7M7.1 17 5.6 18.4M18.4 18.4 16.9 17M7.1 7 5.6 5.6"/></svg></span>
+          <div><h3>AI integration</h3><small>Applied LLMs</small></div>
+        </div>
+        <div class="tags">
+          <span class="tag">Spring AI</span><span class="tag">OpenAI API</span>
+          <span class="tag">Prompt Engineering</span><span class="tag">Text Classification</span>
+        </div>
+      </article>
+    </div>
+
+    <div class="card reveal" style="padding:clamp(24px,3.4vw,34px)">
+      <h3 style="font-size:17px;font-weight:700;letter-spacing:-.015em;margin-bottom:22px">Core proficiency</h3>
+      <div class="bars">
+        <div class="bar-row">
+          <div class="top"><span>Java 17 · Core Java</span><b>88%</b></div>
+          <div class="bar"><i data-w="88"></i></div>
+        </div>
+        <div class="bar-row">
+          <div class="top"><span>Spring Boot &amp; REST APIs</span><b>85%</b></div>
+          <div class="bar"><i data-w="85"></i></div>
+        </div>
+        <div class="bar-row">
+          <div class="top"><span>SQL &amp; PostgreSQL</span><b>82%</b></div>
+          <div class="bar"><i data-w="82"></i></div>
+        </div>
+        <div class="bar-row">
+          <div class="top"><span>Testing &amp; automation (JUnit · Rest Assured)</span><b>87%</b></div>
+          <div class="bar"><i data-w="87"></i></div>
+        </div>
+        <div class="bar-row">
+          <div class="top"><span>C++ / DSA</span><b>76%</b></div>
+          <div class="bar"><i data-w="76"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ EXPERIENCE ══════════════════════════ -->
+<section class="section" id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Journey</p>
+      <h2>Experience &amp; <em>education</em></h2>
+      <p>Where I've worked, what I studied, and the road between.</p>
+    </div>
+
+    <div class="tl-grid">
+      <div class="reveal">
+        <h3 class="tl-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          Experience
+        </h3>
+
+        <div class="timeline">
+          <div class="tl-item">
+            <span class="tl-date">Sep 2025 – Apr 2026</span>
+            <h4>Systems Engineer — QA Automation</h4>
+            <p class="org">Infosys Limited · Bangalore, India</p>
+            <p>
+              Built and maintained Java-based REST API automation, validating payloads, status
+              codes, headers, auth and business rules. Designed and executed 150+ API test cases
+              reaching 90%+ coverage and surfacing 25+ critical pre-production defects. Ran SQL
+              validation across 20+ tables, built a Selenium framework (POM · TestNG · Maven) that
+              cut manual effort by 45%, and wired suites into Jenkins CI/CD in Agile/Scrum teams.
+            </p>
+          </div>
+
+          <div class="tl-item">
+            <span class="tl-date">Internship</span>
+            <h4>Summer Intern — Web Development</h4>
+            <p class="org">Bharat Intern</p>
+            <p>Hands-on web development internship working through front-end build tasks and deliverables.</p>
+          </div>
+
+          <div class="tl-item">
+            <span class="tl-date">Training</span>
+            <h4>Summer Training</h4>
+            <p class="org">Software Services Solution</p>
+            <p>Structured summer training covering software development practices and project work.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h3 class="tl-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          Education
+        </h3>
+
+        <div class="timeline">
+          <div class="tl-item">
+            <span class="tl-date">2021 – 2025</span>
+            <h4>B.E. — Electronics &amp; Communication Engineering</h4>
+            <p class="org">Sant Longowal Institute of Engineering &amp; Technology (SLIET), Punjab</p>
+            <p>Graduated with a CGPA of 8.16 / 10.</p>
+          </div>
+
+          <div class="tl-item">
+            <span class="tl-date">2019 – 2021</span>
+            <h4>Senior Secondary (10+2)</h4>
+            <p class="org">Gyan Bharti Senior Secondary School, Raniganj, Tekari</p>
+          </div>
+
+          <div class="tl-item">
+            <span class="tl-date">2006 – 2018</span>
+            <h4>Schooling</h4>
+            <p class="org">R.D. Public School, Vikram Vihar, Tekari, Gaya</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ PROJECTS ══════════════════════════ -->
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Portfolio</p>
+      <h2>Things I've <em>built</em></h2>
+      <p>Backend services and APIs, full-stack web apps, and a few Python &amp; IoT experiments.</p>
+    </div>
+
+    <div class="filters reveal" role="group" aria-label="Filter projects">
+      <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter" type="button" data-filter="backend" aria-pressed="false">Backend &amp; APIs</button>
+      <button class="filter" type="button" data-filter="web" aria-pressed="false">Web</button>
+      <button class="filter" type="button" data-filter="python" aria-pressed="false">Python &amp; IoT</button>
+    </div>
+
+    <div class="proj-grid" id="projGrid">
+
+      <!-- 1. Healthcare platform -->
+      <article class="proj reveal" data-cat="backend">
+        <div class="shot">
+          <span class="flag">Featured</span>
+          <svg class="arch" viewBox="0 0 400 250" role="img" aria-label="Microservices architecture: an API gateway routing to Patient, Appointment, Notification and AI Assistant services, secured with Spring Security and JWT, persisting to PostgreSQL via JPA.">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" class="grad-1a"/>
+                <stop offset="1" class="grad-1b"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="250" fill="url(#g1)"/>
+            <g class="wire">
+              <path d="M200 62v22M120 118v20M200 118v20M280 118v20"/>
+              <path d="M120 196v20M200 196v20M280 196v20"/>
+            </g>
+            <g>
+              <rect class="n-acc" x="140" y="24" width="120" height="34" rx="9"/>
+              <text class="t-light" x="200" y="46">API Gateway</text>
+
+              <rect class="n" x="72" y="80" width="96" height="34" rx="9"/>
+              <text x="120" y="102">Patient</text>
+
+              <rect class="n" x="152" y="80" width="96" height="34" rx="9"/>
+              <text x="200" y="102">Appointment</text>
+
+              <rect class="n" x="232" y="80" width="96" height="34" rx="9"/>
+              <text x="280" y="102">Notification</text>
+
+              <rect class="n-soft" x="152" y="138" width="96" height="34" rx="9"/>
+              <text x="200" y="160">AI Assistant</text>
+
+              <rect class="n" x="52" y="196" width="136" height="34" rx="9"/>
+              <text x="120" y="218">Spring Security · JWT</text>
+
+              <rect class="n" x="200" y="196" width="150" height="34" rx="9"/>
+              <text x="275" y="218">PostgreSQL · JPA</text>
+            </g>
+          </svg>
+        </div>
+        <div class="body">
+          <h3>AI-Powered Healthcare Service Management Platform</h3>
+          <p>
+            Microservices healthcare platform with separate Patient, Appointment, Notification and
+            AI Assistant services. 25+ RESTful APIs, JPA/Hibernate over PostgreSQL with pagination,
+            sorting and custom JPQL, JWT role-based access for ADMIN / DOCTOR / PATIENT, and a
+            Spring AI + OpenAI integration that classifies service requests.
+          </p>
+          <div class="tags">
+            <span class="tag">Java 17</span><span class="tag">Spring Boot</span><span class="tag">Microservices</span>
+            <span class="tag">Spring Security</span><span class="tag">JWT</span><span class="tag">PostgreSQL</span>
+            <span class="tag">Spring AI</span><span class="tag">JUnit</span><span class="tag">Docker</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. REST API automation framework -->
+      <article class="proj reveal" data-cat="backend">
+        <div class="shot">
+          <svg class="arch" viewBox="0 0 400 250" role="img" aria-label="Terminal output from the API regression suite: 150 API tests passed, SQL and response validation passed, 90 percent coverage, build success.">
+            <defs>
+              <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" class="grad-2a"/>
+                <stop offset="1" class="grad-2b"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="250" fill="url(#g2)"/>
+            <g>
+              <rect class="panel" x="34" y="26" width="332" height="198" rx="12"/>
+              <circle cx="52" cy="44" r="4" fill="#ff5f57"/>
+              <circle cx="68" cy="44" r="4" fill="#febc2e"/>
+              <circle cx="84" cy="44" r="4" fill="#28c840"/>
+              <g class="term">
+                <text class="t-acc" x="54" y="76" text-anchor="start">$ mvn test -Dsuite=api-regression</text>
+                <text class="t-mut" x="54" y="100" text-anchor="start">[INFO] RestAssured · TestNG · Cucumber</text>
+                <text class="t-ok"  x="54" y="124" text-anchor="start">✓ PASSED  150 API tests</text>
+                <text class="t-ok"  x="54" y="148" text-anchor="start">✓ PASSED  SQL ↔ response validation</text>
+                <text class="t-ok"  x="54" y="172" text-anchor="start">✓ PASSED  Auth · payload · status codes</text>
+                <text class="t-dim" x="54" y="196" text-anchor="start">[INFO] Coverage 90%+ · defects found 25</text>
+                <text class="t-dim" x="54" y="214" text-anchor="start">[INFO] BUILD SUCCESS</text>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="body">
+          <h3>REST API Automation &amp; Database Validation Framework</h3>
+          <p>
+            Reusable Java automation for CRUD operations, authentication and response validation,
+            with data-driven testing and SQL checks that verify REST responses against what was
+            actually persisted in the database.
+          </p>
+          <div class="tags">
+            <span class="tag">Java</span><span class="tag">Rest Assured</span><span class="tag">TestNG</span>
+            <span class="tag">Cucumber</span><span class="tag">SQL</span><span class="tag">Maven</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. E-commerce -->
+      <article class="proj reveal" data-cat="web">
+        <div class="shot">
+          <img src="assets/img/project-ecommerce.webp" alt="E-commerce storefront with a hero banner and navigation" loading="lazy" width="1280" height="673">
+        </div>
+        <div class="body">
+          <h3>E-Commerce Website</h3>
+          <p>A responsive storefront with product listings, a hero offer section, category navigation and a clean shopping flow.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <div class="links">
+            <a href="https://github.com/Karankumarweb/Ecommerce-project" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Face recognition -->
+      <article class="proj reveal" data-cat="python">
+        <div class="shot">
+          <img src="assets/img/project-face-recognition.webp" alt="Face recognition attendance system desktop application dashboard" loading="lazy" width="1400" height="804">
+        </div>
+        <div class="body">
+          <h3>Face Recognition Attendance System</h3>
+          <p>Desktop application that registers students, trains on captured photos and marks attendance from a live face detector, with a help desk and exportable records.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Tkinter</span></div>
+        </div>
+      </article>
+
+      <!-- 5. FoundBook -->
+      <article class="proj reveal" data-cat="web">
+        <div class="shot">
+          <img src="assets/img/project-foundbook.webp" alt="FoundBook lost and found website home page with a search bar" loading="lazy" width="1400" height="706">
+        </div>
+        <div class="body">
+          <h3>FoundBook — Lost &amp; Found Platform</h3>
+          <p>A community lost-and-found site where people post items they've found or lost, with search, categories and photo listings.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        </div>
+      </article>
+
+      <!-- 6. Smart ambulance -->
+      <article class="proj reveal" data-cat="python">
+        <div class="shot">
+          <img src="assets/img/project-smart-ambulance.webp" alt="Arduino based smart ambulance prototype with GPS module and LCD display" loading="lazy" width="782" height="442">
+        </div>
+        <div class="body">
+          <h3>Smart Ambulance with GPS</h3>
+          <p>Arduino-based emergency vehicle prototype that streams live location over GSM and shows it on a 16×2 LCD, so a control room can track an approaching ambulance.</p>
+          <div class="tags"><span class="tag">Arduino</span><span class="tag">GPS / GSM</span><span class="tag">Embedded C</span></div>
+        </div>
+      </article>
+
+      <!-- 7. Tic tac toe -->
+      <article class="proj reveal" data-cat="web">
+        <div class="shot">
+          <img src="assets/img/project-tic-tac-toe.webp" alt="Tic Tac Toe game board running in a browser" loading="lazy" width="1280" height="627">
+        </div>
+        <div class="body">
+          <h3>Tic-Tac-Toe Game</h3>
+          <p>Browser game with win detection, turn handling and a reset control — built as a clean DOM and state-management exercise.</p>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span></div>
+          <div class="links">
+            <a href="https://github.com/Karankumarweb/Tic-Tac-Toe-game" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8. Hamro College -->
+      <article class="proj reveal" data-cat="web">
+        <div class="shot">
+          <img src="assets/img/project-hamro-college.webp" alt="Hamro College website home page with course search" loading="lazy" width="1400" height="691">
+        </div>
+        <div class="body">
+          <h3>Hamro College — Website Design</h3>
+          <p>College website with course and department navigation, a course search bar, and login / register entry points.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">UI Design</span></div>
+        </div>
+      </article>
+
+      <!-- 9. Snake -->
+      <article class="proj reveal" data-cat="python">
+        <div class="shot">
+          <img src="assets/img/project-snake-game.webp" alt="Snake game window showing score and high score" loading="lazy" width="889" height="930">
+        </div>
+        <div class="body">
+          <h3>Snake Game</h3>
+          <p>Classic snake built in Python with score tracking, a high-score record and collision detection.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Pygame</span></div>
+        </div>
+      </article>
+
+      <!-- 10. Ping pong -->
+      <article class="proj reveal" data-cat="python">
+        <div class="shot">
+          <img src="assets/img/project-ping-pong.webp" alt="Ping Pong game window with two paddles and a ball" loading="lazy" width="1196" height="950">
+        </div>
+        <div class="body">
+          <h3>Ping Pong Game</h3>
+          <p>Two-player paddle game in Python with ball physics, collision handling and scorekeeping.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Pygame</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ CERTIFICATIONS ══════════════════════════ -->
+<section class="section" id="certifications">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Certifications</p>
+      <h2>Certificates &amp; <em>achievements</em></h2>
+      <p>Formal courses and certifications I've completed alongside work.</p>
+    </div>
+
+    <div class="cert-grid">
+      <button class="cert reveal" type="button"
+              data-full="assets/img/cert-cpp-coding-ninjas.webp"
+              data-caption="Certificate of Excellence — Introduction to C++, awarded to Karan Kumar by Coding Ninjas (Top Performer, September–October 2022).">
+        <div class="shot">
+          <img src="assets/img/cert-cpp-coding-ninjas.webp" alt="Coding Ninjas Certificate of Excellence for Introduction to C++ awarded to Karan Kumar" loading="lazy" width="1400" height="969">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg>View</span>
+        </div>
+        <div class="body">
+          <h3>Introduction to C++</h3>
+          <p class="issuer">Coding Ninjas · Top Performer</p>
+          <p class="meta">September – October 2022</p>
+        </div>
+      </button>
+
+      <button class="cert reveal" type="button"
+              data-full="assets/img/cert-cpp-udemy.webp"
+              data-caption="Udemy Certificate of Completion — Learn C++ Programming: Beginner to Advance, completed by Karan Kumar on 21 January 2022 (30.5 total hours).">
+        <div class="shot">
+          <img src="assets/img/cert-cpp-udemy.webp" alt="Udemy certificate of completion for Learn C++ Programming awarded to Karan Kumar" loading="lazy" width="1400" height="1041">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg>View</span>
+        </div>
+        <div class="body">
+          <h3>Learn C++ Programming — Beginner to Advance</h3>
+          <p class="issuer">Udemy</p>
+          <p class="meta">21 January 2022 · 30.5 hours</p>
+        </div>
+      </button>
+
+      <button class="cert reveal" type="button"
+              data-full="assets/img/cert-html-greatlearning.webp"
+              data-caption="Great Learning Academy Certificate of Completion — HTML in Hindi, awarded to Karan Kumar (July 2022).">
+        <div class="shot">
+          <img src="assets/img/cert-html-greatlearning.webp" alt="Great Learning Academy certificate of completion for HTML awarded to Karan Kumar" loading="lazy" width="1400" height="989">
+          <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg>View</span>
+        </div>
+        <div class="body">
+          <h3>HTML in Hindi</h3>
+          <p class="issuer">Great Learning Academy</p>
+          <p class="meta">July 2022</p>
+        </div>
+      </button>
+    </div>
+
+    <div class="badges reveal">
+      <span class="badge-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+        SDET Bootcamp Certified
+      </span>
+      <span class="badge-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+        Core Java Certified
+      </span>
+      <span class="badge-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg>
+        45% manual testing effort reduced at Infosys
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ CONTACT ══════════════════════════ -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's build something <em>solid</em></h2>
+      <p>Open to Java / Spring Boot backend roles. Happy to talk about APIs, microservices or testing.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-list">
+          <a class="cline" href="mailto:kk4447058@gmail.com">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg></span>
+            <div><small>Email</small><span>kk4447058@gmail.com</span></div>
+          </a>
+          <a class="cline" href="tel:+918757280393">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <div><small>Phone</small><span>+91 87572 80393</span></div>
+          </a>
+          <a class="cline" href="https://github.com/Karankumarweb" target="_blank" rel="noopener noreferrer">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.55v-1.94c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.2.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg></span>
+            <div><small>GitHub</small><span>github.com/Karankumarweb</span></div>
+          </a>
+          <div class="cline">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <div><small>Location</small><span>Bengaluru, Karnataka, India</span></div>
+          </div>
+        </div>
+
+        <a class="btn btn-ghost" href="assets/docs/Karan-Kumar-Resume.pdf" download="Karan-Kumar-Resume.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Download résumé (PDF)
+        </a>
+      </div>
+
+      <div class="card form-card reveal">
+        <h3>Send me a message</h3>
+        <p>Fill this in and your mail app will open with everything pre-filled — one click to send.</p>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Your name" autocomplete="name" required>
+              <span class="err">Please tell me your name.</span>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" placeholder="you@company.com" autocomplete="email" required>
+              <span class="err">Please enter a valid email address.</span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" name="subject" placeholder="Backend role · Spring Boot" required>
+            <span class="err">Please add a subject.</span>
+          </div>
+
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" placeholder="Hi Karan, we're hiring…" required></textarea>
+            <span class="err">Please write a short message.</span>
+          </div>
+
+          <div class="form-foot">
+            <button class="btn btn-primary" type="submit">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg>
+              Send message
+            </button>
+            <span class="form-note">Or email me directly at <a href="mailto:kk4447058@gmail.com" style="color:var(--accent);font-weight:600">kk4447058@gmail.com</a></span>
+            <span class="form-status" id="formStatus" role="status"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════════════════ FOOTER ══════════════════════════ -->
+<footer class="footer">
+  <div class="wrap">
+    <p>© <span id="year">2026</span> Karan Kumar · Java Backend Developer, Bengaluru</p>
+    <nav class="flinks" aria-label="Footer">
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certificates</a>
+      <a href="https://github.com/Karankumarweb" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="mailto:kk4447058@gmail.com">Email</a>
+    </nav>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- ══════════════════════════ LIGHTBOX ══════════════════════════ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate preview" hidden>
+  <button class="x" id="lbClose" type="button" aria-label="Close preview">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <div>
+    <img id="lbImg" src="" alt="">
+    <p class="cap" id="lbCap"></p>
+  </div>
+</div>
+
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
